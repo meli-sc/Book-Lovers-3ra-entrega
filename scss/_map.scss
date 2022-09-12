@@ -1,0 +1,13 @@
+$mapa: (
+    colorfondo1: grey,
+    colorfondo2: lightpink,
+    colorfondo3: lightgreen
+);
+
+@each $colorfondo, $color in $mapa {
+    .fondocolor--#{$colorfondo} {
+        background-color: $color;
+    }
+    
+}
+

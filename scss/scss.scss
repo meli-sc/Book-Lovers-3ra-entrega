@@ -1,0 +1,18 @@
+@import "./mixins";
+*{
+    @include reset;
+}
+
+@import "./variables";
+@import "./header";
+@import "./main";
+@import "./footer";
+@import "./media";
+
+@import "./map";
+@import "./extend";
+
+@import "./index";
+@import "./novedades"
+
+
