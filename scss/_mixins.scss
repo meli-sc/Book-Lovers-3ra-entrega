@@ -13,33 +13,31 @@
         color: $hover; }
         }
 
-// @mixin background-query($background,$vista) {
+ @mixin background-query($background,$vista) {
     
-//     body{
+     body{
 
-//         @if $vista == desktop {
-//             @media only screen and (max-width: 1024px){
-//                 background-color: $background;
-//             }
+         @if $vista == desktop {
+             @media only screen and (max-width: 1024px){
+                background-color: $background;
+             }
 
-//         }
+         }
+         @else if $vista == tablet{
+             @media only screen and (max-width:767px){
+                 background-color: $background;
+             }
+         }
+         @else if $vista == mobile {
+             @media only screen and (max-width: 576px){
+             background-color: $background;
+         }
+         }
 
-//         @else if $vista == tablet{
-//             @media only screen and (max-width:767px){
-//                 background-color: $background;
-//             }
-//         }
+         @else {
+             background-color: $background;
+         }
+     }
 
-//         @else if $vista == mobile {
-//             @media only screen and (max-width: 576px){
-//             background-color: $background;
-//         }
-//         }
-
-//         @else {
-//             background-color: $background;
-//         }
-//     }
-
-// }
+ }
     
